@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0444CD0A255B9138007DAF05 /* SearchRecipeUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0444CD09255B9138007DAF05 /* SearchRecipeUnitTests.swift */; };
+		045DA22025257A7F0045EEDF /* searchRecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DA21F25257A7F0045EEDF /* searchRecipeViewModel.swift */; };
+		045DA22225259D590045EEDF /* searchRecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DA22125259D590045EEDF /* searchRecipeTableViewController.swift */; };
+		047B6E7225600AC30020A3C6 /* SearchRecipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B6E7125600AC30020A3C6 /* SearchRecipeUITests.swift */; };
+		047B6E7425600F080020A3C6 /* ShoppingListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B6E7325600F080020A3C6 /* ShoppingListUITests.swift */; };
+		B924A03F25481BF4001B5A47 /* AddSLItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924A03E25481BF4001B5A47 /* AddSLItemViewModel.swift */; };
+		B9573C47251776A800D3872F /* randomRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9573C46251776A800D3872F /* randomRecipe.swift */; };
+		B95F842C255F9D0A00F6F0B6 /* AddSLItemViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95F842B255F9D0A00F6F0B6 /* AddSLItemViewModelTest.swift */; };
+		B99B2E1B255BEA0100F390A2 /* ShoppingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B99B2E1A255BEA0100F390A2 /* ShoppingList.storyboard */; };
+		B9AD34C325500D8000FBC805 /* ShoppingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AD34C225500D8000FBC805 /* ShoppingListTests.swift */; };
+		B9BE5DB02547CEBB003A9459 /* Pantrify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9BE5DAE2547CEBB003A9459 /* Pantrify.xcdatamodeld */; };
+		B9BE5DB32547EDC4003A9459 /* ShoppingListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE5DB12547EDC4003A9459 /* ShoppingListItem+CoreDataClass.swift */; };
+		B9BE5DB42547EDC4003A9459 /* ShoppingListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE5DB22547EDC4003A9459 /* ShoppingListItem+CoreDataProperties.swift */; };
+		B9BE5DB82547EFA5003A9459 /* ShoppingListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE5DB72547EFA5003A9459 /* ShoppingListManager.swift */; };
+		B9C6418A252E957C00B20872 /* SLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C64189252E957C00B20872 /* SLTableViewCell.swift */; };
+		B9D3876D252B128800F340C4 /* SLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D3876C252B128800F340C4 /* SLViewController.swift */; };
+		C450A01F2530767D001E5EE7 /* CPTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450A01E2530767D001E5EE7 /* CPTableViewCellDelegate.swift */; };
+		C4AD8FA4254ACE0A00CCCF31 /* PantryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD8FA3254ACE0A00CCCF31 /* PantryManager.swift */; };
+		C4AD8FAA254ACEEC00CCCF31 /* PantryItems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD8FA8254ACEEC00CCCF31 /* PantryItems+CoreDataClass.swift */; };
+		C4AD8FAB254ACEEC00CCCF31 /* PantryItems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD8FA9254ACEEC00CCCF31 /* PantryItems+CoreDataProperties.swift */; };
+		C4AD8FAE254AD1F100CCCF31 /* CreatePantryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD8FAD254AD1F100CCCF31 /* CreatePantryViewModel.swift */; };
+		C4AD8FB1254D825B00CCCF31 /* SearchRecipeREST_Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD8FB0254D825B00CCCF31 /* SearchRecipeREST_Request.swift */; };
+		C4AD8FB3254D82E100CCCF31 /* SearchRecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD8FB2254D82E100CCCF31 /* SearchRecipeModel.swift */; };
+		CF5B15932518C3FD002CA12A /* createPantry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5B15922518C3FD002CA12A /* createPantry.swift */; };
+		CF5B15992518C441002CA12A /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5B15982518C441002CA12A /* profile.swift */; };
+		CF97AC30250E56E7009F6160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF97AC2F250E56E7009F6160 /* AppDelegate.swift */; };
+		CF97AC37250E56E7009F6160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF97AC35250E56E7009F6160 /* Main.storyboard */; };
+		CF97AC39250E56E8009F6160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF97AC38250E56E8009F6160 /* Assets.xcassets */; };
+		CF97AC3C250E56E8009F6160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF97AC3A250E56E8009F6160 /* LaunchScreen.storyboard */; };
+		CF97AC47250E56E8009F6160 /* PantrifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF97AC46250E56E8009F6160 /* PantrifyTests.swift */; };
+		CF97AC52250E56E8009F6160 /* PantrifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF97AC51250E56E8009F6160 /* PantrifyUITests.swift */; };
+		CFA52AD32522D0480068CECD /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA52AD22522D0480068CECD /* CollectionViewController.swift */; };
+		CFA52AD5252596120068CECD /* pantrifyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA52AD4252596120068CECD /* pantrifyDetailViewController.swift */; };
+		CFD294BA254283C000027566 /* REST_Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD294B9254283C000027566 /* REST_Request.swift */; };
+		CFF061C325595DC30096403A /* randomRecipeUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF061C225595DC30096403A /* randomRecipeUnitTests.swift */; };
+		CFF7CE91251CB95D000F5A58 /* randomRecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF7CE90251CB95D000F5A58 /* randomRecipesViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF97AC43250E56E8009F6160 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF97AC24250E56E7009F6160 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF97AC2B250E56E7009F6160;
+			remoteInfo = Pantrify;
+		};
+		CF97AC4E250E56E8009F6160 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF97AC24250E56E7009F6160 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF97AC2B250E56E7009F6160;
+			remoteInfo = Pantrify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0444CD09255B9138007DAF05 /* SearchRecipeUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeUnitTests.swift; sourceTree = "<group>"; };
+		045DA21F25257A7F0045EEDF /* searchRecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchRecipeViewModel.swift; sourceTree = "<group>"; };
+		045DA22125259D590045EEDF /* searchRecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchRecipeTableViewController.swift; sourceTree = "<group>"; };
+		047B6E7125600AC30020A3C6 /* SearchRecipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeUITests.swift; sourceTree = "<group>"; };
+		047B6E7325600F080020A3C6 /* ShoppingListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListUITests.swift; sourceTree = "<group>"; };
+		B924A03E25481BF4001B5A47 /* AddSLItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSLItemViewModel.swift; sourceTree = "<group>"; };
+		B9573C46251776A800D3872F /* randomRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomRecipe.swift; sourceTree = "<group>"; };
+		B95F842B255F9D0A00F6F0B6 /* AddSLItemViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSLItemViewModelTest.swift; sourceTree = "<group>"; };
+		B99B2E1A255BEA0100F390A2 /* ShoppingList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingList.storyboard; sourceTree = "<group>"; };
+		B9AD34C225500D8000FBC805 /* ShoppingListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTests.swift; sourceTree = "<group>"; };
+		B9BE5DAF2547CEBB003A9459 /* Pantrify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pantrify.xcdatamodel; sourceTree = "<group>"; };
+		B9BE5DB12547EDC4003A9459 /* ShoppingListItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingListItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B9BE5DB22547EDC4003A9459 /* ShoppingListItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingListItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B9BE5DB72547EFA5003A9459 /* ShoppingListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListManager.swift; sourceTree = "<group>"; };
+		B9C64189252E957C00B20872 /* SLTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLTableViewCell.swift; sourceTree = "<group>"; };
+		B9D3876C252B128800F340C4 /* SLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLViewController.swift; sourceTree = "<group>"; };
+		C450A01E2530767D001E5EE7 /* CPTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		C4AD8FA3254ACE0A00CCCF31 /* PantryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryManager.swift; sourceTree = "<group>"; };
+		C4AD8FA8254ACEEC00CCCF31 /* PantryItems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PantryItems+CoreDataClass.swift"; path = "Pantrify/Model/Pantry/PantryItems+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		C4AD8FA9254ACEEC00CCCF31 /* PantryItems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PantryItems+CoreDataProperties.swift"; path = "Pantrify/Model/Pantry/PantryItems+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		C4AD8FAD254AD1F100CCCF31 /* CreatePantryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePantryViewModel.swift; sourceTree = "<group>"; };
+		C4AD8FB0254D825B00CCCF31 /* SearchRecipeREST_Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeREST_Request.swift; sourceTree = "<group>"; };
+		C4AD8FB2254D82E100CCCF31 /* SearchRecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeModel.swift; sourceTree = "<group>"; };
+		CF5B15922518C3FD002CA12A /* createPantry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createPantry.swift; sourceTree = "<group>"; };
+		CF5B15982518C441002CA12A /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		CF97AC2C250E56E7009F6160 /* Pantrify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pantrify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF97AC2F250E56E7009F6160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF97AC36250E56E7009F6160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF97AC38250E56E8009F6160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF97AC3B250E56E8009F6160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF97AC3D250E56E8009F6160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF97AC42250E56E8009F6160 /* PantrifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PantrifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF97AC46250E56E8009F6160 /* PantrifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantrifyTests.swift; sourceTree = "<group>"; };
+		CF97AC48250E56E8009F6160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF97AC4D250E56E8009F6160 /* PantrifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PantrifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF97AC51250E56E8009F6160 /* PantrifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantrifyUITests.swift; sourceTree = "<group>"; usesTabs = 0; };
+		CF97AC53250E56E8009F6160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFA52AD22522D0480068CECD /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		CFA52AD4252596120068CECD /* pantrifyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pantrifyDetailViewController.swift; sourceTree = "<group>"; };
+		CFD294B9254283C000027566 /* REST_Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST_Request.swift; sourceTree = "<group>"; };
+		CFF061C225595DC30096403A /* randomRecipeUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomRecipeUnitTests.swift; sourceTree = "<group>"; };
+		CFF7CE90251CB95D000F5A58 /* randomRecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomRecipesViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF97AC29250E56E7009F6160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF97AC3F250E56E8009F6160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF97AC4A250E56E8009F6160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B924A03B25481A58001B5A47 /* ShoppingList */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE5DB22547EDC4003A9459 /* ShoppingListItem+CoreDataProperties.swift */,
+				B9BE5DB12547EDC4003A9459 /* ShoppingListItem+CoreDataClass.swift */,
+			);
+			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		B9573C432517763500D3872F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD8FAF254D730C00CCCF31 /* Pantry */,
+				B924A03B25481A58001B5A47 /* ShoppingList */,
+				B9573C46251776A800D3872F /* randomRecipe.swift */,
+				CFD294B9254283C000027566 /* REST_Request.swift */,
+				B9BE5DAE2547CEBB003A9459 /* Pantrify.xcdatamodeld */,
+				B9BE5DB72547EFA5003A9459 /* ShoppingListManager.swift */,
+				C4AD8FA3254ACE0A00CCCF31 /* PantryManager.swift */,
+				C4AD8FB0254D825B00CCCF31 /* SearchRecipeREST_Request.swift */,
+				C4AD8FB2254D82E100CCCF31 /* SearchRecipeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B9573C442517764400D3872F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B99B2E1A255BEA0100F390A2 /* ShoppingList.storyboard */,
+				CF97AC35250E56E7009F6160 /* Main.storyboard */,
+				CF97AC3A250E56E8009F6160 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B9573C452517764B00D3872F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				045DA22125259D590045EEDF /* searchRecipeTableViewController.swift */,
+				CFA52AD4252596120068CECD /* pantrifyDetailViewController.swift */,
+				B9D3876C252B128800F340C4 /* SLViewController.swift */,
+				B9C64189252E957C00B20872 /* SLTableViewCell.swift */,
+				CF5B15982518C441002CA12A /* profile.swift */,
+				CFA52AD22522D0480068CECD /* CollectionViewController.swift */,
+				CF5B15922518C3FD002CA12A /* createPantry.swift */,
+				C450A01E2530767D001E5EE7 /* CPTableViewCellDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B963A6D62524825400AC4176 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD8FAC254AD1A700CCCF31 /* ViewModelCreatePantry */,
+				B9BE5DF62548195B003A9459 /* ViewModelAddShoppingListItem */,
+				CFF7CE90251CB95D000F5A58 /* randomRecipesViewModel.swift */,
+				045DA21F25257A7F0045EEDF /* searchRecipeViewModel.swift */,
+				B9573C452517764B00D3872F /* Controller */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B9BE5DF62548195B003A9459 /* ViewModelAddShoppingListItem */ = {
+			isa = PBXGroup;
+			children = (
+				B924A03E25481BF4001B5A47 /* AddSLItemViewModel.swift */,
+			);
+			path = ViewModelAddShoppingListItem;
+			sourceTree = "<group>";
+		};
+		C4AD8FAC254AD1A700CCCF31 /* ViewModelCreatePantry */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD8FAD254AD1F100CCCF31 /* CreatePantryViewModel.swift */,
+			);
+			path = ViewModelCreatePantry;
+			sourceTree = "<group>";
+		};
+		C4AD8FAF254D730C00CCCF31 /* Pantry */ = {
+			isa = PBXGroup;
+			children = (
+				C4AD8FA9254ACEEC00CCCF31 /* PantryItems+CoreDataProperties.swift */,
+				C4AD8FA8254ACEEC00CCCF31 /* PantryItems+CoreDataClass.swift */,
+			);
+			path = Pantry;
+			sourceTree = "<group>";
+		};
+		CF97AC23250E56E7009F6160 = {
+			isa = PBXGroup;
+			children = (
+				CF97AC2E250E56E7009F6160 /* Pantrify */,
+				CF97AC45250E56E8009F6160 /* PantrifyTests */,
+				CF97AC50250E56E8009F6160 /* PantrifyUITests */,
+				CF97AC2D250E56E7009F6160 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF97AC2D250E56E7009F6160 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF97AC2C250E56E7009F6160 /* Pantrify.app */,
+				CF97AC42250E56E8009F6160 /* PantrifyTests.xctest */,
+				CF97AC4D250E56E8009F6160 /* PantrifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF97AC2E250E56E7009F6160 /* Pantrify */ = {
+			isa = PBXGroup;
+			children = (
+				B963A6D62524825400AC4176 /* ViewModel */,
+				B9573C442517764400D3872F /* View */,
+				B9573C432517763500D3872F /* Model */,
+				CF97AC2F250E56E7009F6160 /* AppDelegate.swift */,
+				CF97AC38250E56E8009F6160 /* Assets.xcassets */,
+				CF97AC3D250E56E8009F6160 /* Info.plist */,
+			);
+			path = Pantrify;
+			sourceTree = "<group>";
+		};
+		CF97AC45250E56E8009F6160 /* PantrifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF97AC46250E56E8009F6160 /* PantrifyTests.swift */,
+				B9AD34C225500D8000FBC805 /* ShoppingListTests.swift */,
+				CF97AC48250E56E8009F6160 /* Info.plist */,
+				CFF061C225595DC30096403A /* randomRecipeUnitTests.swift */,
+				0444CD09255B9138007DAF05 /* SearchRecipeUnitTests.swift */,
+				B95F842B255F9D0A00F6F0B6 /* AddSLItemViewModelTest.swift */,
+			);
+			path = PantrifyTests;
+			sourceTree = "<group>";
+		};
+		CF97AC50250E56E8009F6160 /* PantrifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF97AC51250E56E8009F6160 /* PantrifyUITests.swift */,
+				CF97AC53250E56E8009F6160 /* Info.plist */,
+				047B6E7125600AC30020A3C6 /* SearchRecipeUITests.swift */,
+				047B6E7325600F080020A3C6 /* ShoppingListUITests.swift */,
+			);
+			path = PantrifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF97AC2B250E56E7009F6160 /* Pantrify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF97AC56250E56E8009F6160 /* Build configuration list for PBXNativeTarget "Pantrify" */;
+			buildPhases = (
+				CF97AC28250E56E7009F6160 /* Sources */,
+				CF97AC29250E56E7009F6160 /* Frameworks */,
+				CF97AC2A250E56E7009F6160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pantrify;
+			productName = Pantrify;
+			productReference = CF97AC2C250E56E7009F6160 /* Pantrify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF97AC41250E56E8009F6160 /* PantrifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF97AC59250E56E8009F6160 /* Build configuration list for PBXNativeTarget "PantrifyTests" */;
+			buildPhases = (
+				CF97AC3E250E56E8009F6160 /* Sources */,
+				CF97AC3F250E56E8009F6160 /* Frameworks */,
+				CF97AC40250E56E8009F6160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF97AC44250E56E8009F6160 /* PBXTargetDependency */,
+			);
+			name = PantrifyTests;
+			productName = PantrifyTests;
+			productReference = CF97AC42250E56E8009F6160 /* PantrifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF97AC4C250E56E8009F6160 /* PantrifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF97AC5C250E56E8009F6160 /* Build configuration list for PBXNativeTarget "PantrifyUITests" */;
+			buildPhases = (
+				CF97AC49250E56E8009F6160 /* Sources */,
+				CF97AC4A250E56E8009F6160 /* Frameworks */,
+				CF97AC4B250E56E8009F6160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF97AC4F250E56E8009F6160 /* PBXTargetDependency */,
+			);
+			name = PantrifyUITests;
+			productName = PantrifyUITests;
+			productReference = CF97AC4D250E56E8009F6160 /* PantrifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF97AC24250E56E7009F6160 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Harrison Kinbacher";
+				TargetAttributes = {
+					CF97AC2B250E56E7009F6160 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					CF97AC41250E56E8009F6160 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = CF97AC2B250E56E7009F6160;
+					};
+					CF97AC4C250E56E8009F6160 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = CF97AC2B250E56E7009F6160;
+					};
+				};
+			};
+			buildConfigurationList = CF97AC27250E56E7009F6160 /* Build configuration list for PBXProject "Pantrify" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF97AC23250E56E7009F6160;
+			productRefGroup = CF97AC2D250E56E7009F6160 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF97AC2B250E56E7009F6160 /* Pantrify */,
+				CF97AC41250E56E8009F6160 /* PantrifyTests */,
+				CF97AC4C250E56E8009F6160 /* PantrifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF97AC2A250E56E7009F6160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF97AC3C250E56E8009F6160 /* LaunchScreen.storyboard in Resources */,
+				CF97AC39250E56E8009F6160 /* Assets.xcassets in Resources */,
+				B99B2E1B255BEA0100F390A2 /* ShoppingList.storyboard in Resources */,
+				CF97AC37250E56E7009F6160 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF97AC40250E56E8009F6160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF97AC4B250E56E8009F6160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF97AC28250E56E7009F6160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA52AD32522D0480068CECD /* CollectionViewController.swift in Sources */,
+				045DA22225259D590045EEDF /* searchRecipeTableViewController.swift in Sources */,
+				B9BE5DB42547EDC4003A9459 /* ShoppingListItem+CoreDataProperties.swift in Sources */,
+				CFD294BA254283C000027566 /* REST_Request.swift in Sources */,
+				CF5B15992518C441002CA12A /* profile.swift in Sources */,
+				C4AD8FA4254ACE0A00CCCF31 /* PantryManager.swift in Sources */,
+				045DA22025257A7F0045EEDF /* searchRecipeViewModel.swift in Sources */,
+				B9573C47251776A800D3872F /* randomRecipe.swift in Sources */,
+				C4AD8FAA254ACEEC00CCCF31 /* PantryItems+CoreDataClass.swift in Sources */,
+				CFF7CE91251CB95D000F5A58 /* randomRecipesViewModel.swift in Sources */,
+				C4AD8FB3254D82E100CCCF31 /* SearchRecipeModel.swift in Sources */,
+				C4AD8FB1254D825B00CCCF31 /* SearchRecipeREST_Request.swift in Sources */,
+				C450A01F2530767D001E5EE7 /* CPTableViewCellDelegate.swift in Sources */,
+				CF97AC30250E56E7009F6160 /* AppDelegate.swift in Sources */,
+				B9BE5DB82547EFA5003A9459 /* ShoppingListManager.swift in Sources */,
+				B9BE5DB02547CEBB003A9459 /* Pantrify.xcdatamodeld in Sources */,
+				B9BE5DB32547EDC4003A9459 /* ShoppingListItem+CoreDataClass.swift in Sources */,
+				CFA52AD5252596120068CECD /* pantrifyDetailViewController.swift in Sources */,
+				B924A03F25481BF4001B5A47 /* AddSLItemViewModel.swift in Sources */,
+				C4AD8FAB254ACEEC00CCCF31 /* PantryItems+CoreDataProperties.swift in Sources */,
+				CF5B15932518C3FD002CA12A /* createPantry.swift in Sources */,
+				C4AD8FAE254AD1F100CCCF31 /* CreatePantryViewModel.swift in Sources */,
+				B9C6418A252E957C00B20872 /* SLTableViewCell.swift in Sources */,
+				B9D3876D252B128800F340C4 /* SLViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF97AC3E250E56E8009F6160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF97AC47250E56E8009F6160 /* PantrifyTests.swift in Sources */,
+				CFF061C325595DC30096403A /* randomRecipeUnitTests.swift in Sources */,
+				B9AD34C325500D8000FBC805 /* ShoppingListTests.swift in Sources */,
+				0444CD0A255B9138007DAF05 /* SearchRecipeUnitTests.swift in Sources */,
+				B95F842C255F9D0A00F6F0B6 /* AddSLItemViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF97AC49250E56E8009F6160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF97AC52250E56E8009F6160 /* PantrifyUITests.swift in Sources */,
+				047B6E7225600AC30020A3C6 /* SearchRecipeUITests.swift in Sources */,
+				047B6E7425600F080020A3C6 /* ShoppingListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF97AC44250E56E8009F6160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF97AC2B250E56E7009F6160 /* Pantrify */;
+			targetProxy = CF97AC43250E56E8009F6160 /* PBXContainerItemProxy */;
+		};
+		CF97AC4F250E56E8009F6160 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF97AC2B250E56E7009F6160 /* Pantrify */;
+			targetProxy = CF97AC4E250E56E8009F6160 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF97AC35250E56E7009F6160 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF97AC36250E56E7009F6160 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF97AC3A250E56E8009F6160 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF97AC3B250E56E8009F6160 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF97AC54250E56E8009F6160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF97AC55250E56E8009F6160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF97AC57250E56E8009F6160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V27LHVNRVB;
+				INFOPLIST_FILE = Pantrify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Pantrify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF97AC58250E56E8009F6160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V27LHVNRVB;
+				INFOPLIST_FILE = Pantrify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Pantrify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF97AC5A250E56E8009F6160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V27LHVNRVB;
+				INFOPLIST_FILE = PantrifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "harryfish447-hotmail.com.au.PantrifyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pantrify.app/Pantrify";
+			};
+			name = Debug;
+		};
+		CF97AC5B250E56E8009F6160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PantrifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "harryfish447-hotmail.com.au.PantrifyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pantrify.app/Pantrify";
+			};
+			name = Release;
+		};
+		CF97AC5D250E56E8009F6160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V27LHVNRVB;
+				INFOPLIST_FILE = PantrifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "harryfish447-hotmail.com.au.PantrifyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pantrify;
+			};
+			name = Debug;
+		};
+		CF97AC5E250E56E8009F6160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PantrifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "harryfish447-hotmail.com.au.PantrifyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pantrify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF97AC27250E56E7009F6160 /* Build configuration list for PBXProject "Pantrify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF97AC54250E56E8009F6160 /* Debug */,
+				CF97AC55250E56E8009F6160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF97AC56250E56E8009F6160 /* Build configuration list for PBXNativeTarget "Pantrify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF97AC57250E56E8009F6160 /* Debug */,
+				CF97AC58250E56E8009F6160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF97AC59250E56E8009F6160 /* Build configuration list for PBXNativeTarget "PantrifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF97AC5A250E56E8009F6160 /* Debug */,
+				CF97AC5B250E56E8009F6160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF97AC5C250E56E8009F6160 /* Build configuration list for PBXNativeTarget "PantrifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF97AC5D250E56E8009F6160 /* Debug */,
+				CF97AC5E250E56E8009F6160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B9BE5DAE2547CEBB003A9459 /* Pantrify.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B9BE5DAF2547CEBB003A9459 /* Pantrify.xcdatamodel */,
+			);
+			currentVersion = B9BE5DAF2547CEBB003A9459 /* Pantrify.xcdatamodel */;
+			path = Pantrify.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CF97AC24250E56E7009F6160 /* Project object */;
+}
